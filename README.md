@@ -16,8 +16,7 @@ client = LeCloudClient(credentials, "apikeygoeshere")
 
 try:
     secret = client.get_secret("uuidgoeshere")
+    print(secret)
 except Exception as e:
     print(e)
-
-print(secret)
 ```
