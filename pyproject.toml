@@ -1,0 +1,14 @@
+[project]
+name = "lecloud-python"
+version = "0.1.0"
+authors = [
+  { name="ricer0ll", email="brianle17360@gmail.com" },
+]
+description = "Python SDK for LeCloud"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pytest>=9.1.0",
+    "requests>=2.34.2",
+]
+license = "MIT"
