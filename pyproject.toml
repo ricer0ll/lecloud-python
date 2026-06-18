@@ -1,6 +1,6 @@
 [project]
 name = "lecloud-python"
-version = "0.1.3"
+version = "1.0.0"
 authors = [
   { name="ricer0ll", email="brianle17360@gmail.com" },
 ]
