@@ -2,6 +2,11 @@
 
 Python SDK for LeCloud.  
 
+Installation:  
+```bash
+pip install lecloud-python
+```  
+
 Usage example:  
 ```python
 from lecloud import Credentials, LeCloudClient
