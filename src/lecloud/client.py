@@ -14,6 +14,8 @@ class LeCloudClient:
         self.credentials = credentials
         self.api_key = api_key
 
+        self.jwt = self._get_jwt()
+
     def _get_header(self, jwt="") -> dict:
         """Constructs the HTTP headers required for API requests.
 
@@ -77,7 +79,7 @@ class LeCloudClient:
 
         response = requests.get(
             url=f"https://api.riceroll.fyi/v1/accounts/{account_id}/secrets/{secret_id}/decrypt",
-            headers=self._get_header(self._get_jwt())
+            headers=self._get_header(self.jwt)
         )
 
         if response.status_code != 200:
